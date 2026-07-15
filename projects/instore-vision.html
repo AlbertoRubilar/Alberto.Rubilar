@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Proyecto - Plataforma BI Retail</title>
+<link rel="stylesheet" href="../assets/css/style.css"></head><body>
+<a href="../index.html">← Inicio</a>
+<h1>Plataforma de Business Intelligence para el Control Operacional</h1>
+
+<h2>Resumen ejecutivo</h2>
+<p>Diseñé e implementé una plataforma de Business Intelligence basada en Power BI, SharePoint y Power Automate para transformar un proceso operativo altamente manual en una solución automatizada capaz de centralizar información, validar datos, generar alertas y entregar indicadores antes del inicio de la jornada.</p>
+
+<h2>El desafío</h2>
+<ul>
+<li>Múltiples archivos Excel diarios.</li>
+<li>Consolidación manual.</li>
+<li>Históricos difíciles de mantener.</li>
+<li>Validaciones reactivas.</li>
+<li>Correos manuales.</li>
+</ul>
+
+<h2>La solución</h2>
+<p>Integración de SharePoint, Power Query, Power BI, DAX y Power Automate para consolidar aproximadamente 450.000 registros semanales, generar incidencias automáticas y distribuir reportes operacionales.</p>
+
+<h2>Arquitectura</h2>
+<pre>
+Archivos -> SharePoint -> Power Query
+                 |
+                 v
+         Modelo Power BI (26 tablas)
+                 |
+        +--------+--------+
+        |                 |
+ Dashboards        Power Automate
+                          |
+                   Alertas y Correos
+</pre>
+
+<h2>Resultados</h2>
+<ul>
+<li>Automatización de tareas repetitivas.</li>
+<li>Centralización de información.</li>
+<li>Histórico anual integrado.</li>
+<li>Escalabilidad para nuevos clientes y categorías.</li>
+<li>Mejor control de calidad de datos.</li>
+</ul>
+</body></html>
