@@ -865,3 +865,30 @@ padding:35px;
 }
 
 }
+/*=========================================
+    SCROLL ANIMATIONS
+=========================================*/
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:1s;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.background{
+
+    transition:transform .25s linear;
+
+}
