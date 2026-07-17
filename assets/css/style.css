@@ -1,1 +1,1 @@
-body{margin:0;font-family:Arial;background:#0f172a;color:#fff}.hero{padding:80px}.btn{background:#2563eb;color:#fff;padding:12px 20px;text-decoration:none;border-radius:8px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;padding:30px}.card{background:#1e293b;padding:20px;border-radius:10px}
+body{margin:0;background:#0f172a;color:#fff;font-family:Arial}header{padding:20px;background:#111827}nav a{color:#9cf;margin-right:10px}.hero{padding:70px}.cards{display:flex;gap:20px}.card{background:#1e293b;padding:20px;border-radius:10px}
