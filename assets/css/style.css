@@ -1111,3 +1111,167 @@ footer{
     }
 
 }
+/*====================================================
+    SKILLS PAGE - CARDS
+====================================================*/
+
+.section{
+
+    width:min(1250px,92%);
+
+    margin:0 auto;
+
+    padding:110px 0;
+
+}
+
+
+.section-header{
+
+    margin-bottom:55px;
+
+}
+
+
+.section-tag{
+
+    display:inline-block;
+
+    margin-bottom:18px;
+
+    color:#7cb6ff;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+
+.section-header h2{
+
+    font-size:42px;
+
+    line-height:1.2;
+
+    font-weight:800;
+
+}
+
+
+/*====================================================
+    SKILL CARDS
+====================================================*/
+
+.skill-card{
+
+    background:rgba(255,255,255,.035);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:32px;
+
+    min-height:260px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    transition:.35s;
+
+}
+
+
+.skill-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#3b82f6;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+
+}
+
+
+.skill-card h3{
+
+    font-size:24px;
+
+    margin-bottom:16px;
+
+    color:#ffffff;
+
+}
+
+
+.skill-card p{
+
+    color:var(--text2);
+
+    line-height:1.8;
+
+    font-size:15px;
+
+    flex:1;
+
+}
+
+
+.skill-level{
+
+    display:inline-block;
+
+    align-self:flex-start;
+
+    margin-top:25px;
+
+    padding:8px 15px;
+
+    border-radius:30px;
+
+    background:#102b49;
+
+    border:1px solid rgba(59,130,246,.15);
+
+    color:#8fc5ff;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+
+/*====================================================
+    SKILLS RESPONSIVE
+====================================================*/
+
+@media(max-width:700px){
+
+    .section{
+
+        padding:80px 0;
+
+    }
+
+
+    .section-header h2{
+
+        font-size:32px;
+
+    }
+
+
+    .skill-card{
+
+        padding:26px;
+
+        min-height:auto;
+
+    }
+
+}
