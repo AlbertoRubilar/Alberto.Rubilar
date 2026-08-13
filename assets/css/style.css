@@ -948,3 +948,166 @@ footer{
     transition:transform .25s linear;
 
 }
+/*====================================================
+    TECHNOLOGY STACK
+====================================================*/
+
+.tech-stack{
+
+    width:min(1100px,92%);
+
+    margin:0 auto 120px;
+
+    padding:80px 60px;
+
+    background:rgba(255,255,255,.025);
+
+    border:1px solid rgba(255,255,255,.07);
+
+    border-radius:25px;
+
+    text-align:center;
+
+}
+
+
+.tech-header{
+
+    max-width:750px;
+
+    margin:0 auto 45px;
+
+}
+
+
+.tech-tag{
+
+    display:inline-block;
+
+    margin-bottom:18px;
+
+    color:#7cb6ff;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+
+.tech-header h2{
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+
+.tech-header p{
+
+    color:var(--text2);
+
+    line-height:1.8;
+
+    font-size:16px;
+
+}
+
+
+.tech-list{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+}
+
+
+.tech-list span{
+
+    padding:13px 20px;
+
+    border-radius:30px;
+
+    background:#122237;
+
+    border:1px solid rgba(255,255,255,.07);
+
+    color:#dce7f5;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+
+.tech-list span:hover{
+
+    transform:translateY(-4px);
+
+    border-color:#3b82f6;
+
+    color:#7cb6ff;
+
+    background:#17304d;
+
+}
+
+
+/*====================================================
+    TECHNOLOGY STACK - RESPONSIVE
+====================================================*/
+
+@media(max-width:700px){
+
+    .tech-stack{
+
+        padding:55px 25px;
+
+        margin-bottom:80px;
+
+    }
+
+
+    .tech-header h2{
+
+        font-size:32px;
+
+    }
+
+
+    .tech-header p{
+
+        font-size:15px;
+
+    }
+
+
+    .tech-list{
+
+        gap:10px;
+
+    }
+
+
+    .tech-list span{
+
+        padding:11px 15px;
+
+        font-size:13px;
+
+    }
+
+}
