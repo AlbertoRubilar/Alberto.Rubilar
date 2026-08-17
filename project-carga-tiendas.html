@@ -72,25 +72,24 @@
     <div class="hero-left">
 
         <span class="tag">
-            PROCESS AUTOMATION
+            PROCESS AUTOMATION · POWER PLATFORM
         </span>
 
         <h1>
-            Sistema de
-            <br>
-            Requerimientos
-            <br>
-            de Carga
+            Sistema de Requerimientos
+            de Carga de Bloques
         </h1>
 
         <h2>
-            Bloques · Tiendas · Automatización
+            Automatización de solicitudes
+            y preparación de cargas de tiendas
         </h2>
 
         <p>
-            Automatización de un proceso de generación de solicitudes
-            de carga de tiendas mediante Microsoft Forms, Power Automate,
-            Power BI y Excel.
+            Solución desarrollada para automatizar la preparación de
+            archivos de carga de tiendas, reduciendo la recopilación
+            manual de información y dejando el archivo listo para
+            ser cargado en la plataforma.
         </p>
 
     </div>
@@ -127,30 +126,22 @@
         <div class="about-text">
 
             <p class="lead">
-                El sistema fue desarrollado para automatizar la
-                preparación de solicitudes de carga de tiendas
-                agrupadas dentro de un mismo bloque.
+                El sistema permite solicitar la carga de un bloque de
+                tiendas mediante un formulario y generar automáticamente
+                la información necesaria para preparar el archivo de carga.
             </p>
 
             <p>
-                Antes de la automatización, la preparación de una
-                solicitud requería buscar manualmente las tiendas
-                asociadas a un bloque, identificar sus respectivos
-                Response ID y recopilar información adicional desde
-                diferentes fuentes.
+                Antes de esta automatización, el proceso requería buscar
+                manualmente cada tienda perteneciente a un bloque,
+                identificar su información asociada y recopilar distintos
+                datos desde archivos y fuentes independientes.
             </p>
 
             <p>
-                Posteriormente, toda esta información debía ser
-                organizada manualmente dentro de un template para
-                generar el archivo que finalmente sería utilizado
-                para realizar la carga en la plataforma.
-            </p>
-
-            <p>
-                La solución automatiza gran parte de este proceso,
-                utilizando el código del bloque como punto de partida
-                para recuperar y consolidar la información necesaria.
+                La solución conecta Microsoft Forms, Power Automate,
+                Power BI, Excel y fuentes de Microsoft 365 para realizar
+                automáticamente gran parte de este proceso.
             </p>
 
         </div>
@@ -166,7 +157,7 @@
                 </span>
 
                 <span class="highlight-label">
-                    Solicitud mediante Microsoft Forms
+                    Solicitud de carga
                 </span>
 
             </div>
@@ -179,7 +170,7 @@
                 </span>
 
                 <span class="highlight-label">
-                    Consulta del modelo semántico
+                    Consulta de información
                 </span>
 
             </div>
@@ -192,7 +183,7 @@
                 </span>
 
                 <span class="highlight-label">
-                    Flujo automatizado con Power Automate
+                    Proceso automatizado
                 </span>
 
             </div>
@@ -205,7 +196,7 @@
                 </span>
 
                 <span class="highlight-label">
-                    Template listo para carga
+                    Archivo listo para cargar
                 </span>
 
             </div>
@@ -232,7 +223,7 @@
         </span>
 
         <h2>
-            El proceso anterior.
+            El problema.
         </h2>
 
     </div>
@@ -240,86 +231,30 @@
 
     <div class="about-text">
 
-        <p class="lead">
-            La preparación de cada solicitud dependía de múltiples
-            búsquedas y tareas manuales.
+        <p>
+            El proceso original requería preparar manualmente un
+            template de carga para cada solicitud.
         </p>
 
         <p>
-            La persona encargada debía identificar todas las tiendas
-            pertenecientes a un determinado bloque y buscar el
-            Response ID correspondiente a cada una.
+            Para hacerlo era necesario buscar todas las tiendas
+            correspondientes a un mismo bloque, identificar el
+            Response ID de cada una y posteriormente cruzar esa
+            información con otros datos provenientes de archivos
+            utilizados durante el proceso de colecta.
         </p>
 
         <p>
-            Además, debía consultar información adicional de la
-            colecta, como estados y otros campos necesarios para
-            completar correctamente el archivo.
+            Entre la información necesaria se encontraban estados,
+            nombres, identificadores, fechas y otros campos requeridos
+            por la plataforma de destino.
         </p>
 
         <p>
-            Finalmente, todos estos datos debían ser agrupados
-            manualmente en un template antes de poder realizar
-            la carga.
+            Este proceso podía tomar aproximadamente 15 minutos por
+            solicitud y representaba cerca de dos horas diarias de
+            trabajo manual.
         </p>
-
-    </div>
-
-
-    <div class="about-highlights">
-
-
-        <div class="highlight-card">
-
-            <span class="highlight-number">
-                01
-            </span>
-
-            <span class="highlight-label">
-                Buscar el bloque
-            </span>
-
-        </div>
-
-
-        <div class="highlight-card">
-
-            <span class="highlight-number">
-                02
-            </span>
-
-            <span class="highlight-label">
-                Identificar las tiendas
-            </span>
-
-        </div>
-
-
-        <div class="highlight-card">
-
-            <span class="highlight-number">
-                03
-            </span>
-
-            <span class="highlight-label">
-                Buscar información adicional
-            </span>
-
-        </div>
-
-
-        <div class="highlight-card">
-
-            <span class="highlight-number">
-                04
-            </span>
-
-            <span class="highlight-label">
-                Completar el template
-            </span>
-
-        </div>
-
 
     </div>
 
@@ -328,7 +263,7 @@
 
 
 <!-- =========================
-     SOLUCIÓN
+     SOLICITUD
 ========================== -->
 
 <section class="section">
@@ -336,11 +271,11 @@
     <div class="section-header">
 
         <span class="section-tag">
-            03 / SOLUTION
+            03 / REQUEST
         </span>
 
         <h2>
-            La solución automatizada.
+            Una solicitud simple.
         </h2>
 
     </div>
@@ -352,27 +287,28 @@
         <article class="project-card">
 
             <span class="project-category">
-                INPUT
+                MICROSOFT FORMS
             </span>
 
             <h3>
-                Solicitud
+                Ingreso de solicitud
             </h3>
 
             <p>
-                El proceso comienza cuando una persona completa
-                un Microsoft Form indicando el código del bloque,
-                el auditor que será asignado y la fecha correspondiente.
+                La persona que solicita la carga completa un formulario
+                con la información mínima necesaria para iniciar el
+                proceso.
             </p>
 
             <div class="project-tech">
 
-                <span>Microsoft Forms</span>
+                <span>Código de bloque</span>
+                <span>Auditor</span>
+                <span>Fecha</span>
 
             </div>
 
         </article>
-
 
 
         <article class="project-card">
@@ -382,23 +318,22 @@
             </span>
 
             <h3>
-                Activación del flujo
+                Disparo automático
             </h3>
 
             <p>
-                El envío del formulario dispara automáticamente
-                un flujo de Power Automate mediante el evento
-                "When a new response is submitted".
+                Al enviar el formulario, Power Automate detecta la nueva
+                respuesta y comienza automáticamente el proceso.
             </p>
 
             <div class="project-tech">
 
                 <span>Power Automate</span>
+                <span>Forms</span>
 
             </div>
 
         </article>
-
 
 
         <article class="project-card">
@@ -412,98 +347,15 @@
             </h3>
 
             <p>
-                El flujo obtiene la información de la solicitud
-                y consulta el modelo semántico de Power BI para
-                recuperar los registros asociados al código del bloque.
+                El flujo utiliza el código del bloque para identificar
+                todas las tiendas asociadas y recuperar la información
+                necesaria para construir la solicitud.
             </p>
 
             <div class="project-tech">
 
                 <span>Power BI</span>
                 <span>Semantic Model</span>
-
-            </div>
-
-        </article>
-
-
-
-        <article class="project-card">
-
-            <span class="project-category">
-                DATA PROCESSING
-            </span>
-
-            <h3>
-                Cruce y procesamiento
-            </h3>
-
-            <p>
-                La información recuperada es procesada mediante
-                filtros, variables, composiciones y ciclos para
-                construir la información necesaria para cada tienda.
-            </p>
-
-            <div class="project-tech">
-
-                <span>Filter Array</span>
-                <span>Apply to Each</span>
-                <span>Variables</span>
-                <span>Compose</span>
-
-            </div>
-
-        </article>
-
-
-
-        <article class="project-card">
-
-            <span class="project-category">
-                OUTPUT
-            </span>
-
-            <h3>
-                Generación del archivo
-            </h3>
-
-            <p>
-                Los datos obtenidos se incorporan automáticamente
-                en un template Excel online con todos los campos
-                requeridos para realizar la carga.
-            </p>
-
-            <div class="project-tech">
-
-                <span>Excel</span>
-                <span>Microsoft 365</span>
-
-            </div>
-
-        </article>
-
-
-
-        <article class="project-card">
-
-            <span class="project-category">
-                DELIVERY
-            </span>
-
-            <h3>
-                Solicitud automática
-            </h3>
-
-            <p>
-                Una vez generado el archivo, Power Automate prepara
-                y envía automáticamente un correo con la información
-                de la solicitud, el archivo y un resumen en formato HTML.
-            </p>
-
-            <div class="project-tech">
-
-                <span>Outlook</span>
-                <span>Power Automate</span>
 
             </div>
 
@@ -517,7 +369,7 @@
 
 
 <!-- =========================
-     FLUJO
+     POWER AUTOMATE
 ========================== -->
 
 <section class="section">
@@ -525,11 +377,11 @@
     <div class="section-header">
 
         <span class="section-tag">
-            04 / AUTOMATION FLOW
+            04 / POWER AUTOMATE
         </span>
 
         <h2>
-            Flujo de información.
+            El flujo de automatización.
         </h2>
 
     </div>
@@ -538,8 +390,33 @@
     <div class="about-text">
 
         <p class="lead">
-            El proceso completo conecta la captura de la solicitud,
-            consulta de datos, transformación y generación del resultado.
+            Power Automate funciona como el orquestador de todo el
+            proceso.
+        </p>
+
+        <p>
+            El flujo comienza con el disparador
+            <strong>When a new response is submitted</strong>,
+            obteniendo posteriormente las respuestas ingresadas en
+            Microsoft Forms.
+        </p>
+
+        <p>
+            Los valores recibidos son organizados mediante Compose y
+            variables para utilizarlos posteriormente en las consultas
+            y cruces de información.
+        </p>
+
+        <p>
+            El flujo utiliza acciones como Filter Array, Apply to each,
+            Initialize variable y consultas sobre información almacenada
+            en el ecosistema Microsoft.
+        </p>
+
+        <p>
+            De esta forma, el proceso puede trabajar con todas las
+            tiendas asociadas al código de bloque recibido en la
+            solicitud.
         </p>
 
     </div>
@@ -547,27 +424,12 @@
 
     <div class="tech-list">
 
-        <span>Microsoft Forms</span>
-
-        <span>Power Automate</span>
-
-        <span>Obtener respuesta</span>
-
+        <span>When a new response is submitted</span>
         <span>Compose</span>
-
-        <span>Power BI</span>
-
-        <span>Query Dataset</span>
-
+        <span>Initialize variable</span>
         <span>Filter Array</span>
-
-        <span>Apply to Each</span>
-
-        <span>Variables</span>
-
-        <span>Excel Online</span>
-
-        <span>Outlook</span>
+        <span>Apply to each</span>
+        <span>Queries</span>
 
     </div>
 
@@ -584,11 +446,11 @@
     <div class="section-header">
 
         <span class="section-tag">
-            05 / DATA INTEGRATION
+            05 / DATA SOURCE
         </span>
 
         <h2>
-            Integración con Power BI.
+            Información desde Power BI.
         </h2>
 
     </div>
@@ -599,24 +461,22 @@
 
         <div class="about-text">
 
-            <p class="lead">
-                El modelo semántico de Power BI actúa como una fuente
-                centralizada para recuperar la información necesaria
-                para construir la solicitud.
+            <p>
+                Una de las fuentes principales utilizadas por el flujo
+                corresponde al modelo semántico en línea de
+                <strong>Smart Censo Comunas</strong>.
             </p>
 
             <p>
-                A partir del código del bloque ingresado en el
-                formulario, el proceso identifica todas las líneas
-                asociadas y recupera los datos necesarios para
-                construir el archivo.
+                A partir del código de bloque ingresado en la solicitud,
+                el proceso identifica todas las líneas correspondientes
+                a las tiendas asociadas a ese bloque.
             </p>
 
             <p>
-                Entre la información utilizada se encuentran los
-                Response ID de las tiendas, Response Status,
-                Response Name, estado de carga, código del auditor
-                y fechas de inicio y término.
+                De esta manera se recuperan automáticamente datos que
+                anteriormente debían ser buscados y consolidados de
+                manera manual.
             </p>
 
         </div>
@@ -628,24 +488,11 @@
             <div class="highlight-card">
 
                 <span class="highlight-number">
-                    BLOCK ID
+                    ID
                 </span>
 
                 <span class="highlight-label">
-                    Identificador utilizado para buscar las tiendas
-                </span>
-
-            </div>
-
-
-            <div class="highlight-card">
-
-                <span class="highlight-number">
-                    RESPONSE
-                </span>
-
-                <span class="highlight-label">
-                    Identificación de cada registro asociado
+                    Response ID de la tienda
                 </span>
 
             </div>
@@ -658,7 +505,20 @@
                 </span>
 
                 <span class="highlight-label">
-                    Estado de la información y carga
+                    Estado del Response
+                </span>
+
+            </div>
+
+
+            <div class="highlight-card">
+
+                <span class="highlight-number">
+                    AUD
+                </span>
+
+                <span class="highlight-label">
+                    Código del auditor
                 </span>
 
             </div>
@@ -671,13 +531,120 @@
                 </span>
 
                 <span class="highlight-label">
-                    Fechas utilizadas en la solicitud
+                    Fechas de inicio y término
                 </span>
 
             </div>
 
 
         </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     TEMPLATE
+========================== -->
+
+<section class="section">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            06 / TEMPLATE GENERATION
+        </span>
+
+        <h2>
+            Generación automática del archivo.
+        </h2>
+
+    </div>
+
+
+    <div class="projects-grid">
+
+
+        <article class="project-card">
+
+            <span class="project-category">
+                DATA PREPARATION
+            </span>
+
+            <h3>
+                Cruce de información
+            </h3>
+
+            <p>
+                Los datos obtenidos desde Power BI son cruzados con
+                información almacenada en otros archivos y fuentes
+                utilizadas por el proceso.
+            </p>
+
+            <div class="project-tech">
+
+                <span>Power BI</span>
+                <span>SharePoint</span>
+                <span>Excel</span>
+
+            </div>
+
+        </article>
+
+
+        <article class="project-card">
+
+            <span class="project-category">
+                EXCEL
+            </span>
+
+            <h3>
+                Template de carga
+            </h3>
+
+            <p>
+                El flujo completa automáticamente un archivo Excel
+                online utilizando la estructura requerida por la
+                plataforma de destino.
+            </p>
+
+            <div class="project-tech">
+
+                <span>Excel Online</span>
+                <span>Power Automate</span>
+
+            </div>
+
+        </article>
+
+
+        <article class="project-card">
+
+            <span class="project-category">
+                OUTPUT
+            </span>
+
+            <h3>
+                Archivo listo
+            </h3>
+
+            <p>
+                El resultado corresponde a un archivo preparado para
+                ser utilizado directamente en el proceso de carga,
+                eliminando la preparación manual de la información.
+            </p>
+
+            <div class="project-tech">
+
+                <span>Excel</span>
+                <span>Automation</span>
+
+            </div>
+
+        </article>
+
 
     </div>
 
@@ -694,80 +661,50 @@
     <div class="section-header">
 
         <span class="section-tag">
-            06 / OUTPUT
+            07 / OUTPUT
         </span>
 
         <h2>
-            Resultado del proceso.
+            La solicitud llega preparada.
         </h2>
 
     </div>
 
 
-    <div class="projects-grid">
+    <div class="about-text">
+
+        <p class="lead">
+            Una vez finalizado el procesamiento, el sistema genera
+            automáticamente la solicitud de carga.
+        </p>
+
+        <p>
+            El correo contiene los datos de la persona que realizó la
+            solicitud, el auditor asignado y la fecha correspondiente.
+        </p>
+
+        <p>
+            Además, se adjunta una copia del template completado y una
+            tabla HTML con el resumen de la información generada,
+            facilitando la revisión y utilización de los datos.
+        </p>
+
+        <p>
+            La intervención humana queda reducida principalmente a
+            revisar la solicitud y subir el archivo generado a la
+            plataforma correspondiente.
+        </p>
+
+    </div>
 
 
-        <article class="project-card">
+    <div class="tech-list">
 
-            <h3>
-                Template preparado
-            </h3>
-
-            <p>
-                El archivo Excel es completado automáticamente con
-                la información necesaria y queda preparado para
-                ser utilizado directamente en el proceso de carga.
-            </p>
-
-        </article>
-
-
-
-        <article class="project-card">
-
-            <h3>
-                Correo automático
-            </h3>
-
-            <p>
-                El solicitante recibe una comunicación automática
-                con los datos de la solicitud y el archivo generado.
-            </p>
-
-        </article>
-
-
-
-        <article class="project-card">
-
-            <h3>
-                Resumen HTML
-            </h3>
-
-            <p>
-                El correo incorpora además una tabla HTML con un
-                resumen de la información generada, facilitando
-                su revisión y utilización.
-            </p>
-
-        </article>
-
-
-
-        <article class="project-card">
-
-            <h3>
-                Intervención mínima
-            </h3>
-
-            <p>
-                La intervención humana queda prácticamente reducida
-                a completar la solicitud inicial y posteriormente
-                realizar la carga del archivo generado.
-            </p>
-
-        </article>
-
+        <span>Solicitud</span>
+        <span>Archivo Excel</span>
+        <span>Resumen HTML</span>
+        <span>Correo automático</span>
+        <span>Archivo listo para carga</span>
 
     </div>
 
@@ -784,7 +721,7 @@
     <div class="section-header">
 
         <span class="section-tag">
-            07 / IMPACT
+            08 / IMPACT
         </span>
 
         <h2>
@@ -794,95 +731,67 @@
     </div>
 
 
-    <div class="about-grid">
+    <div class="projects-grid">
 
 
-        <div class="about-text">
+        <article class="project-card">
 
-            <p class="lead">
-                El principal resultado fue transformar un proceso
-                manual de recopilación y preparación de información
-                en un flujo automatizado.
-            </p>
+            <h3>
+                Menos trabajo manual
+            </h3>
 
             <p>
-                Antes, cada solicitud requería aproximadamente
-                15 minutos de trabajo manual entre búsquedas,
-                cruces de información y preparación del template.
+                Se elimina la búsqueda y consolidación manual de
+                información para preparar cada solicitud.
             </p>
+
+        </article>
+
+
+        <article class="project-card">
+
+            <h3>
+                Ahorro de tiempo
+            </h3>
 
             <p>
-                Con la automatización, el proceso genera
-                automáticamente la información necesaria y
-                prepara el archivo para la carga.
+                El proceso anterior podía requerir aproximadamente
+                15 minutos por solicitud, llegando a representar
+                cerca de dos horas diarias de trabajo.
             </p>
+
+        </article>
+
+
+        <article class="project-card">
+
+            <h3>
+                Mayor consistencia
+            </h3>
 
             <p>
-                En la operación diaria, esto representa un ahorro
-                aproximado de dos horas de trabajo, además de reducir
-                la posibilidad de errores derivados de la manipulación
-                manual de información.
+                La información es obtenida y procesada mediante un
+                flujo estructurado, reduciendo la posibilidad de
+                errores asociados a la recopilación manual.
             </p>
 
-        </div>
+        </article>
 
 
-        <div class="about-highlights">
+        <article class="project-card">
 
+            <h3>
+                Proceso de punta a punta
+            </h3>
 
-            <div class="highlight-card">
+            <p>
+                Desde el ingreso de la solicitud hasta la generación
+                del archivo y envío por correo, el proceso queda
+                conectado mediante automatización.
+            </p>
 
-                <span class="highlight-number">
-                    15 MIN
-                </span>
+        </article>
 
-                <span class="highlight-label">
-                    Trabajo manual eliminado por solicitud
-                </span>
-
-            </div>
-
-
-            <div class="highlight-card">
-
-                <span class="highlight-number">
-                    2 H
-                </span>
-
-                <span class="highlight-label">
-                    Ahorro aproximado diario
-                </span>
-
-            </div>
-
-
-            <div class="highlight-card">
-
-                <span class="highlight-number">
-                    AUTO
-                </span>
-
-                <span class="highlight-label">
-                    Generación automática del archivo
-                </span>
-
-            </div>
-
-
-            <div class="highlight-card">
-
-                <span class="highlight-number">
-                    1
-                </span>
-
-                <span class="highlight-label">
-                    Intervención final: cargar el archivo
-                </span>
-
-            </div>
-
-
-        </div>
 
     </div>
 
@@ -899,7 +808,7 @@
     <div class="section-header">
 
         <span class="section-tag">
-            08 / TECHNOLOGY STACK
+            09 / TECHNOLOGY STACK
         </span>
 
         <h2>
@@ -912,19 +821,12 @@
     <div class="tech-list">
 
         <span>Microsoft Forms</span>
-
         <span>Power Automate</span>
-
         <span>Power BI</span>
-
         <span>Power BI Semantic Model</span>
-
         <span>Excel Online</span>
-
         <span>SharePoint</span>
-
         <span>Microsoft 365</span>
-
         <span>Outlook</span>
 
     </div>
@@ -942,14 +844,11 @@
     <div class="about-text">
 
         <p>
-
-            <strong>Nota:</strong>
-            este caso de estudio presenta la arquitectura,
-            metodología y tecnologías utilizadas de forma general.
-            Los datos, nombres de clientes, información comercial
-            y elementos confidenciales han sido omitidos o
+            <strong>Nota:</strong> este caso de estudio presenta la
+            arquitectura, metodología y tecnologías utilizadas de
+            forma general. Los datos, nombres de clientes, información
+            comercial y elementos confidenciales han sido omitidos o
             generalizados.
-
         </p>
 
     </div>
