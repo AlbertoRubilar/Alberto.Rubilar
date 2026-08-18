@@ -1702,3 +1702,141 @@ footer{
     }
 
 }
+/* =====================================================
+   HERO - FOTO JUNTO A LA IDENTIDAD
+===================================================== */
+
+.hero-identity{
+    position:relative;
+    display:block;
+    margin-bottom:45px;
+    min-height:230px;
+}
+
+
+.hero-identity-text{
+    padding-right:270px;
+}
+
+
+.hero-profile{
+    position:absolute;
+    right:0;
+    top:0;
+
+    width:230px;
+    height:230px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+.hero-profile .profile-wrapper{
+    width:230px;
+    height:230px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+.hero-profile .profile-image{
+    width:205px;
+    height:205px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:4px solid rgba(255,255,255,.10);
+
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media(max-width:850px){
+
+    .hero-identity{
+        min-height:190px;
+    }
+
+    .hero-identity-text{
+        padding-right:220px;
+    }
+
+    .hero-profile{
+        width:190px;
+        height:190px;
+    }
+
+    .hero-profile .profile-wrapper{
+        width:190px;
+        height:190px;
+    }
+
+    .hero-profile .profile-image{
+        width:170px;
+        height:170px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:600px){
+
+    .hero-identity{
+        min-height:auto;
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        text-align:center;
+
+        gap:25px;
+    }
+
+
+    .hero-identity-text{
+        padding-right:0;
+    }
+
+
+    .hero-profile{
+        position:relative;
+
+        right:auto;
+        top:auto;
+
+        width:200px;
+        height:200px;
+
+        order:-1;
+    }
+
+
+    .hero-profile .profile-wrapper{
+        width:200px;
+        height:200px;
+    }
+
+
+    .hero-profile .profile-image{
+        width:180px;
+        height:180px;
+    }
+
+}
