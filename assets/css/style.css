@@ -1,7 +1,7 @@
-/* ===========================================
+/* =====================================================
    ALBERTO RUBILAR PORTFOLIO
-   VERSION 2.0
-===========================================*/
+   STYLE V3
+===================================================== */
 
 :root{
 
@@ -11,20 +11,27 @@
     --background:#07111f;
     --background2:#0d1728;
 
-    --card:#132235;
+    --card:#111d2e;
+    --card2:#162438;
 
     --text:#ffffff;
     --text2:#c8d2e2;
+    --muted:#8ca2bd;
 
     --border:rgba(255,255,255,.08);
 
-    --radius:18px;
+    --radius:20px;
 
     --shadow:0 20px 60px rgba(0,0,0,.35);
 
     --transition:.35s;
 
 }
+
+
+/* =====================================================
+   RESET
+===================================================== */
 
 *{
 
@@ -35,55 +42,48 @@
 
 }
 
+
 html{
 
     scroll-behavior:smooth;
 
 }
 
+
 body{
 
-    font-family:'Inter',sans-serif;
+    font-family:'Inter',Arial,sans-serif;
 
-    background:var(--background);
+    background:
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(59,130,246,.08),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 70%,
+            rgba(59,130,246,.05),
+            transparent 30%
+        ),
+        linear-gradient(
+            180deg,
+            #07111f,
+            #091422,
+            #0d1728
+        );
 
-    color:white;
+    color:var(--text);
 
     overflow-x:hidden;
 
-}
-
-/* ========================= */
-
-.background{
-
-    position:fixed;
-
-    inset:0;
-
-    background:
-
-    radial-gradient(circle at top left,#1d4ed850 0%,transparent 40%),
-
-    radial-gradient(circle at bottom right,#2563eb40 0%,transparent 35%),
-
-    linear-gradient(
-
-    180deg,
-
-    #07111f,
-
-    #091422,
-
-    #0d1728
-
-    );
-
-    z-index:-10;
+    line-height:1.6;
 
 }
 
-/* ========================= */
+
+/* =====================================================
+   CONTAINER
+===================================================== */
 
 .container{
 
@@ -93,21 +93,23 @@ body{
 
 }
 
-/* ========================= */
+
+/* =====================================================
+   HEADER
+===================================================== */
 
 header{
 
     position:fixed;
 
     top:0;
-
     left:0;
 
     width:100%;
 
     backdrop-filter:blur(20px);
 
-    background:rgba(8,15,25,.70);
+    background:rgba(8,15,25,.78);
 
     border-bottom:1px solid rgba(255,255,255,.05);
 
@@ -115,11 +117,10 @@ header{
 
 }
 
-/* ========================= */
 
 .nav{
 
-    height:82px;
+    min-height:82px;
 
     display:flex;
 
@@ -129,9 +130,10 @@ header{
 
 }
 
+
 .logo{
 
-    font-size:34px;
+    font-size:30px;
 
     font-weight:800;
 
@@ -141,15 +143,15 @@ header{
 
 }
 
-/* ========================= */
 
 nav{
 
     display:flex;
 
-    gap:38px;
+    gap:32px;
 
 }
+
 
 nav a{
 
@@ -159,41 +161,49 @@ nav a{
 
     font-size:15px;
 
-    transition:.30s;
+    transition:.3s;
 
 }
+
 
 nav a:hover{
 
-    color:var(--primary);
+    color:#7cb6ff;
 
 }
 
-/* ========================= */
+
+/* =====================================================
+   HERO
+===================================================== */
 
 .hero{
 
-    min-height:100vh;
-
-    width:min(1300px,92%);
+    width:min(1250px,92%);
 
     margin:auto;
 
+    min-height:100vh;
+
     display:grid;
 
-    grid-template-columns:1fr 430px;
+    grid-template-columns:minmax(0,1fr) 380px;
 
     align-items:center;
 
     gap:80px;
 
+    padding-top:100px;
+
 }
+
 
 .hero-left{
 
-    animation:fadeUp 1s;
+    animation:fadeUp 1s ease;
 
 }
+
 
 .tag{
 
@@ -201,111 +211,94 @@ nav a:hover{
 
     align-items:center;
 
-    padding:10px 18px;
+    padding:9px 17px;
 
     border-radius:50px;
 
-    background:#10233b;
+    background:rgba(255,255,255,.045);
 
-    border:1px solid rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.10);
 
-    margin-bottom:35px;
+    margin-bottom:28px;
 
-    color:#9fc8ff;
+    color:#a9caff;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:1.5px;
 
 }
 
+
 .hero h1{
 
-    font-size:68px;
+    font-size:76px;
 
-    line-height:1;
+    line-height:.95;
+
+    letter-spacing:-2px;
 
     margin-bottom:25px;
 
 }
 
+
 .hero h2{
 
-    color:#7cb6ff;
+    color:#8abfff;
+
+    font-size:30px;
 
     font-weight:500;
 
-    line-height:1.4;
-
-    margin-bottom:28px;
+    margin-bottom:30px;
 
 }
 
-.hero p{
 
-    font-size:19px;
+.hero-description{
+
+    max-width:760px;
+
+}
+
+
+.hero-description p{
 
     color:var(--text2);
 
-    line-height:1.9;
+    font-size:18px;
 
-    max-width:650px;
+    line-height:1.85;
 
-}
-
-/* ========================= */
-
-.buttons{
-
-    margin-top:45px;
-
-    display:flex;
-
-    gap:20px;
+    margin-bottom:20px;
 
 }
 
-.btn-primary{
 
-    background:var(--primary);
+.hero-description .hero-lead{
+
+    font-size:22px;
+
+    color:#e8f0fb;
+
+    line-height:1.6;
+
+}
+
+
+.hero-description strong{
 
     color:white;
 
-    padding:18px 34px;
-
-    border-radius:14px;
-
-    text-decoration:none;
-
-    transition:.35s;
-
 }
 
-.btn-primary:hover{
 
-    transform:translateY(-4px);
-
-    background:var(--primary-dark);
-
-}
-
-.btn-secondary{
-
-    border:1px solid rgba(255,255,255,.15);
-
-    color:white;
-
-    padding:18px 34px;
-
-    border-radius:14px;
-
-    text-decoration:none;
-
-}
-
-.btn-secondary:hover{
-
-    background:rgba(255,255,255,.05);
-
-}
-
-/* ========================= */
+/* =====================================================
+   PROFILE
+===================================================== */
 
 .hero-right{
 
@@ -313,434 +306,103 @@ nav a:hover{
 
     justify-content:center;
 
-}
-
-.hero-right img{
-
-    width:360px;
-
-    border-radius:30px;
-
-    border:4px solid rgba(255,255,255,.08);
-
-    box-shadow:var(--shadow);
-
-}
-
-/* ========================= */
-
-.stats{
-
-    width:min(1250px,92%);
-
-    margin:120px auto;
-
-    display:grid;
-
-    grid-template-columns:repeat(4,1fr);
-
-    gap:25px;
-
-}
-
-.stat{
-
-    background:rgba(255,255,255,.03);
-
-    border:1px solid rgba(255,255,255,.06);
-
-    padding:40px;
-
-    border-radius:20px;
-
-    text-align:center;
-
-}
-
-.stat h3{
-
-    font-size:48px;
-
-    color:#6fb2ff;
-
-}
-
-.stat span{
-
-    display:block;
-
-    margin-top:15px;
-
-    color:#c8d2e2;
-
-}
-
-/* ========================= */
-
-@keyframes fadeUp{
-
-    from{
-
-        opacity:0;
-
-        transform:translateY(60px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
-
-}
-/*====================================================
-    ABOUT
-====================================================*/
-
-section{
-
-    padding:110px 0;
-
-}
-
-.section-title{
-
-    text-align:center;
-
-    font-size:46px;
-
-    font-weight:800;
-
-    margin-bottom:20px;
-
-}
-
-.section-subtitle{
-
-    text-align:center;
-
-    color:var(--text2);
-
-    max-width:750px;
-
-    margin:0 auto 70px;
-
-    line-height:1.8;
-
-}
-
-.about{
-
-    width:min(1250px,92%);
-
-    margin:auto;
-
-    display:grid;
-
-    grid-template-columns:380px 1fr;
-
-    gap:70px;
-
     align-items:center;
 
 }
 
-.about img{
 
-    width:100%;
+.profile-wrapper{
 
-    border-radius:25px;
+    position:relative;
 
-    box-shadow:var(--shadow);
+    width:320px;
 
-}
-
-.about-content h3{
-
-    font-size:34px;
-
-    margin-bottom:20px;
-
-}
-
-.about-content p{
-
-    color:var(--text2);
-
-    line-height:1.9;
-
-    margin-bottom:22px;
-
-}
-
-.about-boxes{
-
-    margin-top:35px;
-
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:20px;
-
-}
-
-.about-card{
-
-    background:rgba(255,255,255,.03);
-
-    border:1px solid var(--border);
-
-    border-radius:18px;
-
-    padding:25px;
-
-    transition:var(--transition);
-
-}
-
-.about-card:hover{
-
-    transform:translateY(-8px);
-
-}
-
-.about-card h4{
-
-    margin-bottom:10px;
-
-    color:#8fc5ff;
-
-}
-
-/*====================================================
-    SKILLS
-====================================================*/
-
-.skills{
-
-    width:min(1250px,92%);
-
-    margin:auto;
-
-}
-
-.skills-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-
-    gap:25px;
-
-}
-
-.skill{
-
-    background:rgba(255,255,255,.03);
-
-    border:1px solid var(--border);
-
-    border-radius:18px;
-
-    padding:30px;
-
-    transition:.35s;
-
-    text-align:center;
-
-}
-
-.skill:hover{
-
-    transform:translateY(-10px);
-
-    border-color:#3b82f6;
-
-}
-
-.skill img{
-
-    width:65px;
-
-    margin-bottom:18px;
-
-}
-
-.skill h3{
-
-    margin-bottom:12px;
-
-}
-
-.skill p{
-
-    color:var(--text2);
-
-    line-height:1.7;
-
-}
-
-/*====================================================
-    PROJECTS
-====================================================*/
-
-.projects{
-
-    width:min(1300px,92%);
-
-    margin:auto;
-
-}
-
-.project-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
-
-    gap:35px;
-
-}
-
-.project{
-
-    overflow:hidden;
-
-    border-radius:22px;
-
-    background:#122237;
-
-    border:1px solid rgba(255,255,255,.06);
-
-    transition:.4s;
-
-}
-
-.project:hover{
-
-    transform:translateY(-10px);
-
-}
-
-.project-image{
-
-    height:220px;
-
-    background:linear-gradient(135deg,#2563eb,#0f172a);
-
-}
-
-.project-content{
-
-    padding:35px;
-
-}
-
-.project-content h3{
-
-    margin-bottom:15px;
-
-    font-size:28px;
-
-}
-
-.project-content p{
-
-    color:var(--text2);
-
-    line-height:1.8;
-
-}
-
-.project-tags{
-
-    margin-top:25px;
+    height:320px;
 
     display:flex;
 
-    gap:10px;
+    align-items:center;
 
-    flex-wrap:wrap;
-
-}
-
-.project-tags span{
-
-    padding:8px 16px;
-
-    border-radius:30px;
-
-    background:#17304d;
-
-    color:#8fc5ff;
-
-    font-size:13px;
+    justify-content:center;
 
 }
 
-.project a{
 
-    margin-top:28px;
+.profile-wrapper::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-20px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(255,255,255,.10);
+
+}
+
+
+.profile-wrapper::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-45px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(59,130,246,.12);
+
+}
+
+
+.profile-image{
+
+    width:290px;
+
+    height:290px;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    border-radius:50%;
+
+    border:5px solid rgba(255,255,255,.08);
+
+    box-shadow:
+
+        0 25px 70px rgba(0,0,0,.5),
+
+        0 0 60px rgba(59,130,246,.10);
+
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-top:35px;
+
+}
+
+
+.btn-primary{
 
     display:inline-block;
 
-    color:#69aeff;
+    padding:15px 28px;
 
-    text-decoration:none;
-
-    font-weight:600;
-
-}
-
-/*====================================================
-    CONTACT
-====================================================*/
-
-.contact{
-
-    width:min(1100px,92%);
-
-    margin:auto;
-
-    text-align:center;
-
-}
-
-.contact-card{
-
-    padding:60px;
-
-    border-radius:25px;
-
-    background:rgba(255,255,255,.03);
-
-    border:1px solid var(--border);
-
-}
-
-.contact-card h2{
-
-    font-size:40px;
-
-    margin-bottom:20px;
-
-}
-
-.contact-card p{
-
-    color:var(--text2);
-
-    margin-bottom:35px;
-
-}
-
-.contact-card a{
-
-    display:inline-block;
+    border-radius:13px;
 
     background:#2563eb;
 
@@ -748,271 +410,662 @@ section{
 
     text-decoration:none;
 
-    padding:18px 40px;
+    font-weight:600;
 
-    border-radius:15px;
-
-}
-
-/*====================================================
-    FOOTER
-====================================================*/
-
-footer{
-
-    margin-top:120px;
-
-    border-top:1px solid rgba(255,255,255,.05);
-
-    padding:45px;
-
-    text-align:center;
-
-    color:#8ca2bd;
-
-}
-
-/*====================================================
-    RESPONSIVE
-====================================================*/
-
-@media(max-width:1100px){
-
-    .hero{
-
-        grid-template-columns:1fr;
-
-        text-align:center;
-
-        padding-top:140px;
-
-    }
-
-    .hero-right{
-
-        order:-1;
-
-    }
-
-    .hero-right img{
-
-        width:320px;
-
-    }
-
-    .about{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .stats{
-
-        grid-template-columns:repeat(2,1fr);
-
-    }
-
-    /* Menú */
-
-    nav{
-
-        display:flex;
-
-        gap:18px;
-
-    }
-
-    nav a{
-
-        font-size:14px;
-
-    }
+    transition:.35s;
 
 }
 
 
-@media(max-width:800px){
+.btn-primary:hover{
 
-    .nav{
+    transform:translateY(-4px);
 
-        height:auto;
+    background:#3b82f6;
 
-        min-height:82px;
-
-        flex-direction:column;
-
-        justify-content:center;
-
-        gap:15px;
-
-        padding:15px 0;
-
-    }
-
-    nav{
-
-        width:100%;
-
-        justify-content:center;
-
-        flex-wrap:wrap;
-
-        gap:12px 18px;
-
-    }
+    box-shadow:0 12px 30px rgba(37,99,235,.25);
 
 }
 
 
-@media(max-width:700px){
-
-    .hero h1{
-
-        font-size:48px;
-
-    }
-
-    .hero h2{
-
-        font-size:25px;
-
-    }
-
-    .buttons{
-
-        flex-direction:column;
-
-    }
-
-    .stats{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .about-boxes{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .section-title{
-
-        font-size:34px;
-
-    }
-
-    .contact-card{
-
-        padding:35px;
-
-    }
-
-    nav{
-
-        gap:10px 14px;
-
-    }
-
-    nav a{
-
-        font-size:13px;
-
-    }
-
-}
-/*=========================================
-    SCROLL ANIMATIONS
-=========================================*/
-
-.hidden{
-
-    opacity:0;
-
-    transform:translateY(60px);
-
-    transition:1s;
-
-}
-
-.show{
-
-    opacity:1;
-
-    transform:translateY(0);
-
-}
-
-.background{
-
-    transition:transform .25s linear;
-
-}
-/*====================================================
-    TECHNOLOGY STACK
-====================================================*/
-
-.tech-stack{
-
-    width:min(1100px,92%);
-
-    margin:0 auto 120px;
-
-    padding:80px 60px;
-
-    background:rgba(255,255,255,.025);
-
-    border:1px solid rgba(255,255,255,.07);
-
-    border-radius:25px;
-
-    text-align:center;
-
-}
-
-
-.tech-header{
-
-    max-width:750px;
-
-    margin:0 auto 45px;
-
-}
-
-
-.tech-tag{
+.btn-secondary{
 
     display:inline-block;
 
-    margin-bottom:18px;
+    padding:15px 28px;
 
-    color:#7cb6ff;
+    border-radius:13px;
 
-    font-size:13px;
+    border:1px solid rgba(255,255,255,.13);
 
-    font-weight:700;
+    color:white;
 
-    letter-spacing:2px;
+    text-decoration:none;
+
+    transition:.35s;
 
 }
 
 
-.tech-header h2{
+.btn-secondary:hover{
 
-    font-size:42px;
+    transform:translateY(-4px);
+
+    background:rgba(255,255,255,.05);
+
+}
+
+
+/* =====================================================
+   HERO STATS
+===================================================== */
+
+.hero-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:12px;
+
+    margin-top:35px;
+
+    max-width:850px;
+
+}
+
+
+.hero-stat{
+
+    padding:20px 15px;
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,.035);
+
+    border:1px solid rgba(255,255,255,.07);
+
+    transition:.3s;
+
+}
+
+
+.hero-stat:hover{
+
+    transform:translateY(-4px);
+
+    background:rgba(255,255,255,.055);
+
+}
+
+
+.hero-stat strong{
+
+    display:block;
+
+    font-size:22px;
+
+    margin-bottom:5px;
+
+}
+
+
+.hero-stat span{
+
+    display:block;
+
+    color:#91a6be;
+
+    font-size:12px;
+
+}
+
+
+/* =====================================================
+   SECTIONS
+===================================================== */
+
+.section{
+
+    width:min(1250px,92%);
+
+    margin:auto;
+
+    padding:95px 0;
+
+}
+
+
+.section-header{
+
+    margin-bottom:50px;
+
+}
+
+
+.section-tag{
+
+    display:inline-block;
+
+    color:#82b9ff;
+
+    font-size:12px;
+
+    font-weight:800;
+
+    letter-spacing:2px;
+
+    margin-bottom:15px;
+
+}
+
+
+.section-header h2{
+
+    font-size:46px;
+
+    line-height:1.15;
+
+    margin-bottom:18px;
+
+}
+
+
+.section-subtitle{
+
+    color:var(--text2);
+
+    max-width:760px;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+}
+
+
+/* =====================================================
+   CORE SKILLS
+===================================================== */
+
+.core-skills-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:22px;
+
+}
+
+
+.core-skill-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:35px;
+
+    min-height:220px;
+
+    border-radius:20px;
+
+    background:#101b2b;
+
+    border:1px solid rgba(255,255,255,.07);
+
+    transition:.35s;
+
+}
+
+
+.core-skill-card:hover{
+
+    transform:translateY(-8px);
+
+    background:#142236;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+.core-skill-accent{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:3px;
+
+    background:#596579;
+
+}
+
+
+.core-skill-card:nth-child(1) .core-skill-accent{
+
+    background:#f1c40f;
+
+}
+
+
+.core-skill-card:nth-child(2) .core-skill-accent{
+
+    background:#8e44ad;
+
+}
+
+
+.core-skill-card:nth-child(3) .core-skill-accent{
+
+    background:#3498db;
+
+}
+
+
+.core-skill-card:nth-child(4) .core-skill-accent{
+
+    background:#27ae60;
+
+}
+
+
+.core-skill-card h3{
+
+    font-size:25px;
+
+    margin-bottom:15px;
+
+}
+
+
+.core-skill-card p{
+
+    color:var(--text2);
+
+    line-height:1.75;
+
+}
+
+
+/* =====================================================
+   FEATURED PROJECTS
+===================================================== */
+
+.featured-projects-section{
+
+    padding-top:75px;
+
+}
+
+
+.featured-projects-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+
+.featured-project-card{
+
+    position:relative;
+
+    padding:38px;
+
+    border-radius:21px;
+
+    background:#101c2d;
+
+    border:1px solid rgba(255,255,255,.07);
+
+    transition:.4s;
+
+}
+
+
+.featured-project-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(255,255,255,.15);
+
+    box-shadow:var(--shadow);
+
+}
+
+
+.project-number{
+
+    display:block;
+
+    color:#5e7189;
+
+    font-size:13px;
+
+    font-weight:800;
+
+    letter-spacing:2px;
 
     margin-bottom:20px;
 
 }
 
 
-.tech-header p{
+.project-category{
+
+    display:inline-block;
+
+    color:#83baff;
+
+    font-size:11px;
+
+    font-weight:800;
+
+    letter-spacing:1.5px;
+
+    margin-bottom:13px;
+
+}
+
+
+.featured-project-card h3{
+
+    font-size:28px;
+
+    line-height:1.25;
+
+    margin-bottom:17px;
+
+}
+
+
+.featured-project-card p{
 
     color:var(--text2);
 
     line-height:1.8;
 
-    font-size:16px;
+    margin-bottom:25px;
+
+}
+
+
+/* =====================================================
+   PROJECT TECH
+===================================================== */
+
+.project-tech{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+    margin-top:20px;
+
+}
+
+
+.project-tech span{
+
+    padding:7px 12px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.07);
+
+    color:#bdcad9;
+
+    font-size:12px;
+
+}
+
+
+.project-link{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    color:#7cb6ff;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+
+.project-link:hover{
+
+    color:white;
+
+    transform:translateX(4px);
+
+}
+
+
+.projects-more{
+
+    text-align:center;
+
+    margin-top:45px;
+
+}
+
+
+/* =====================================================
+   WORKFLOW
+===================================================== */
+
+.workflow-section{
+
+    padding-top:75px;
+
+}
+
+
+.workflow-intro{
+
+    max-width:900px;
+
+    margin-bottom:55px;
+
+}
+
+
+.workflow-intro p{
+
+    color:var(--text2);
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    margin-bottom:22px;
+
+}
+
+
+.workflow-intro .workflow-lead{
+
+    color:white;
+
+    font-size:25px;
+
+    line-height:1.55;
+
+}
+
+
+.workflow-result{
+
+    padding:25px 30px;
+
+    border-left:3px solid #596579;
+
+    background:rgba(255,255,255,.025);
+
+    border-radius:0 15px 15px 0;
+
+}
+
+
+.workflow-result strong{
+
+    color:white;
+
+}
+
+
+/* =====================================================
+   WORKFLOW CARDS
+===================================================== */
+
+.workflow-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+.workflow-card{
+
+    min-height:170px;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    background:#101c2d;
+
+    border:1px solid rgba(255,255,255,.07);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    transition:.35s;
+
+}
+
+
+.workflow-card:hover{
+
+    transform:translateY(-7px);
+
+}
+
+
+.workflow-card strong{
+
+    font-size:25px;
+
+    margin-bottom:7px;
+
+}
+
+
+.workflow-card > span:last-child{
+
+    color:#a9b8c9;
+
+    font-size:13px;
+
+}
+
+
+.workflow-number{
+
+    color:#63758c;
+
+    font-size:11px;
+
+    font-weight:800;
+
+    letter-spacing:2px;
+
+    margin-bottom:12px;
+
+}
+
+
+.workflow-arrow{
+
+    color:#62758e;
+
+    font-size:25px;
+
+}
+
+
+.workflow-data{
+
+    border-top:3px solid #8e44ad;
+
+}
+
+
+.workflow-bi{
+
+    border-top:3px solid #f1c40f;
+
+}
+
+
+.workflow-flow{
+
+    border-top:3px solid #3498db;
+
+}
+
+
+.workflow-impact{
+
+    border-top:3px solid #27ae60;
+
+}
+
+
+/* =====================================================
+   TECHNOLOGY ECOSYSTEM
+===================================================== */
+
+.ecosystem-section{
+
+    text-align:center;
+
+}
+
+
+.homepage-tech-list{
+
+    max-width:1000px;
+
+    margin:auto;
 
 }
 
@@ -1027,26 +1080,24 @@ footer{
 
     flex-wrap:wrap;
 
-    gap:14px;
+    gap:12px;
 
 }
 
 
 .tech-list span{
 
-    padding:13px 20px;
+    padding:11px 17px;
 
     border-radius:30px;
 
-    background:#122237;
+    background:#111d2e;
 
     border:1px solid rgba(255,255,255,.07);
 
     color:#dce7f5;
 
-    font-size:14px;
-
-    font-weight:500;
+    font-size:13px;
 
     transition:.3s;
 
@@ -1057,239 +1108,497 @@ footer{
 
     transform:translateY(-4px);
 
-    border-color:#3b82f6;
+    background:#172538;
 
-    color:#7cb6ff;
-
-    background:#17304d;
+    border-color:rgba(255,255,255,.16);
 
 }
 
 
-/*====================================================
-    TECHNOLOGY STACK - RESPONSIVE
-====================================================*/
+/* =====================================================
+   FINAL CONTACT
+===================================================== */
 
-@media(max-width:700px){
+.home-contact-section{
 
-    .tech-stack{
+    padding-top:60px;
 
-        padding:55px 25px;
-
-        margin-bottom:80px;
-
-    }
-
-
-    .tech-header h2{
-
-        font-size:32px;
-
-    }
-
-
-    .tech-header p{
-
-        font-size:15px;
-
-    }
-
-
-    .tech-list{
-
-        gap:10px;
-
-    }
-
-
-    .tech-list span{
-
-        padding:11px 15px;
-
-        font-size:13px;
-
-    }
-
-}
-/*====================================================
-    SKILLS PAGE - CARDS
-====================================================*/
-
-.section{
-
-    width:min(1250px,92%);
-
-    margin:0 auto;
-
-    padding:110px 0;
+    padding-bottom:110px;
 
 }
 
 
-.section-header{
+.home-contact-card{
 
-    margin-bottom:55px;
+    padding:65px;
 
-}
+    text-align:center;
 
+    border-radius:25px;
 
-.section-tag{
+    background:
 
-    display:inline-block;
+        linear-gradient(
 
-    margin-bottom:18px;
+            135deg,
 
-    color:#7cb6ff;
+            rgba(255,255,255,.045),
 
-    font-size:13px;
+            rgba(255,255,255,.015)
 
-    font-weight:700;
-
-    letter-spacing:2px;
-
-}
-
-
-.section-header h2{
-
-    font-size:42px;
-
-    line-height:1.2;
-
-    font-weight:800;
-
-}
-
-
-/*====================================================
-    SKILL CARDS
-====================================================*/
-
-.skill-card{
-
-    background:rgba(255,255,255,.035);
+        );
 
     border:1px solid rgba(255,255,255,.08);
 
-    border-radius:20px;
+}
 
-    padding:32px;
 
-    min-height:260px;
+.home-contact-card h2{
 
-    display:flex;
+    font-size:42px;
 
-    flex-direction:column;
-
-    transition:.35s;
+    margin-bottom:20px;
 
 }
 
 
-.skill-card:hover{
+.home-contact-card p{
 
-    transform:translateY(-8px);
+    max-width:700px;
 
-    border-color:#3b82f6;
-
-    box-shadow:0 20px 50px rgba(0,0,0,.25);
-
-}
-
-
-.skill-card h3{
-
-    font-size:24px;
-
-    margin-bottom:16px;
-
-    color:#ffffff;
-
-}
-
-
-.skill-card p{
+    margin:0 auto 35px;
 
     color:var(--text2);
 
     line-height:1.8;
 
-    font-size:15px;
-
-    flex:1;
+    font-size:17px;
 
 }
 
 
-.skill-level{
+/* =====================================================
+   FOOTER
+===================================================== */
 
-    display:inline-block;
+footer{
 
-    align-self:flex-start;
+    border-top:1px solid rgba(255,255,255,.05);
 
-    margin-top:25px;
+    padding:40px;
 
-    padding:8px 15px;
+    text-align:center;
 
-    border-radius:30px;
+    color:#71869e;
 
-    background:#102b49;
-
-    border:1px solid rgba(59,130,246,.15);
-
-    color:#8fc5ff;
-
-    font-size:12px;
-
-    font-weight:600;
+    font-size:14px;
 
 }
 
 
-/*====================================================
-    SKILLS RESPONSIVE
-====================================================*/
+/* =====================================================
+   ANIMATIONS
+===================================================== */
 
-@media(max-width:700px){
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:1s;
+
+}
+
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:1100px){
+
+    .hero{
+
+        grid-template-columns:1fr 300px;
+
+        gap:45px;
+
+    }
+
+
+    .hero h1{
+
+        font-size:64px;
+
+    }
+
+
+    .profile-wrapper{
+
+        width:270px;
+
+        height:270px;
+
+    }
+
+
+    .profile-image{
+
+        width:245px;
+
+        height:245px;
+
+    }
+
+
+    .core-skills-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+    .hero-stats{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+    .workflow-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+    .workflow-arrow{
+
+        display:none;
+
+    }
+
+}
+
+
+@media(max-width:850px){
+
+    .nav{
+
+        min-height:82px;
+
+        flex-direction:column;
+
+        justify-content:center;
+
+        gap:12px;
+
+        padding:15px 0;
+
+    }
+
+
+    nav{
+
+        width:100%;
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+        gap:10px 18px;
+
+    }
+
+
+    nav a{
+
+        font-size:13px;
+
+    }
+
+
+    .hero{
+
+        min-height:auto;
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+        padding-top:160px;
+
+        padding-bottom:60px;
+
+    }
+
+
+    .hero-right{
+
+        order:-1;
+
+    }
+
+
+    .hero-description{
+
+        margin:auto;
+
+    }
+
+
+    .buttons{
+
+        justify-content:center;
+
+    }
+
+
+    .hero-stats{
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+    }
+
+
+    .section-header{
+
+        text-align:center;
+
+    }
+
+
+    .section-subtitle{
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+    }
+
+
+    .featured-projects-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    .hero{
+
+        padding-top:150px;
+
+    }
+
+
+    .hero h1{
+
+        font-size:51px;
+
+    }
+
+
+    .hero h2{
+
+        font-size:25px;
+
+    }
+
+
+    .hero-description p{
+
+        font-size:16px;
+
+    }
+
+
+    .hero-description .hero-lead{
+
+        font-size:20px;
+
+    }
+
+
+    .profile-wrapper{
+
+        width:220px;
+
+        height:220px;
+
+    }
+
+
+    .profile-image{
+
+        width:200px;
+
+        height:200px;
+
+    }
+
+
+    .profile-wrapper::before{
+
+        inset:-12px;
+
+    }
+
+
+    .profile-wrapper::after{
+
+        inset:-25px;
+
+    }
+
+
+    .hero-stats{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+
+    .hero-stat{
+
+        padding:17px 10px;
+
+    }
+
+
+    .buttons{
+
+        flex-direction:column;
+
+    }
+
+
+    .btn-primary,
+    .btn-secondary{
+
+        text-align:center;
+
+        width:100%;
+
+    }
+
 
     .section{
 
-        padding:80px 0;
+        padding:70px 0;
 
     }
 
 
     .section-header h2{
 
-        font-size:32px;
+        font-size:34px;
 
     }
 
 
-    .skill-card{
+    .core-skills-grid{
 
-        padding:26px;
+        grid-template-columns:1fr;
+
+    }
+
+
+    .core-skill-card{
 
         min-height:auto;
 
     }
 
-}
-/* ====================================================
-   INDEX - HERO COMPACTO
-==================================================== */
 
-.hero{
-    min-height:0;
-    padding-top:150px;
-    padding-bottom:70px;
-}
-@media(max-width:700px){
+    .featured-project-card{
 
-    .hero{
-        min-height:0;
-        padding-top:150px;
-        padding-bottom:50px;
+        padding:28px;
+
+    }
+
+
+    .featured-project-card h3{
+
+        font-size:24px;
+
+    }
+
+
+    .workflow-intro .workflow-lead{
+
+        font-size:21px;
+
+    }
+
+
+    .workflow-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .workflow-card{
+
+        min-height:140px;
+
+    }
+
+
+    .home-contact-card{
+
+        padding:40px 25px;
+
+    }
+
+
+    .home-contact-card h2{
+
+        font-size:32px;
+
+    }
+
+
+    footer{
+
+        padding:30px 20px;
+
     }
 
 }
