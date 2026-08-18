@@ -1602,3 +1602,103 @@ footer{
     }
 
 }
+/* =====================================================
+   HERO IDENTITY
+===================================================== */
+
+.hero-identity{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:40px;
+
+    margin-bottom:35px;
+
+}
+
+
+.hero-identity-text{
+
+    flex:1;
+
+}
+
+
+.hero-identity .tag{
+
+    margin-bottom:22px;
+
+}
+
+
+.hero-profile{
+
+    flex-shrink:0;
+
+}
+
+
+.hero-profile .profile-wrapper{
+
+    width:220px;
+
+    height:220px;
+
+}
+
+
+.hero-profile .profile-image{
+
+    width:195px;
+
+    height:195px;
+
+}
+
+
+@media(max-width:850px){
+
+    .hero-identity{
+
+        justify-content:center;
+
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    .hero-identity{
+
+        flex-direction:column;
+
+        gap:25px;
+
+        text-align:center;
+
+    }
+
+
+    .hero-profile .profile-wrapper{
+
+        width:200px;
+
+        height:200px;
+
+    }
+
+
+    .hero-profile .profile-image{
+
+        width:180px;
+
+        height:180px;
+
+    }
+
+}
