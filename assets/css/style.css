@@ -4134,15 +4134,8 @@ footer {
    ECOSYSTEM SECTION
 ===================================================== */
 
-.ecosystem-section .section-header {
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center !important;
-}
-
-.ecosystem-section .section-subtitle {
-    max-width: 900px;
+.ecosystem-subtitle {
+    max-width: 1100px !important;
     margin: 0 auto !important;
     text-align: center !important;
-    display: block;
 }
