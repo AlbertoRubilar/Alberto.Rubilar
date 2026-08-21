@@ -4077,58 +4077,61 @@ footer {
         min-height: auto;
     }
 
-    footer {
-        padding: 30px 20px;
-    }
+footer {
+    padding: 30px 20px;
+}
+}
 /* =====================================================
    PORTFOLIO IMAGE FIXES
 ===================================================== */
 
-.case-image-block {
-    max-wid*h: 1100px;
+/* =============================***=====================
+PORTFOLIO ***GE FIXES
+=======================***=========================== */
+.***e-image-block {
+    max-width: 1***px;
     margin: 50px auto;
-*
+}
 
-.case-image-header,
-.case-image*content {
+.c***-image-header,
+.case-image-conte***{
     max-width: 850px;
-  * margin: 0 auto 25px auto;
-    tex**align: center;
+    marg*** 0 auto 25px auto;
+    text-alig***center;
 }
 
-.case-image-wrap*er {
-*   width: 100%;
-    overflow: hidd*n;
+.case-image-wrapper {***  width: 100%;
+    overflow: hid***;
     border-radius: 20px;
-    bo*der: 1px solid rgba*255,255,255,.10);
-    box-shadow: ***0px 50px rgba(0,0,0,.35*;
+    b***er: 1px solid rgba(255,255,255,.***;
+    box-shadow: 0 20px 50px rg***0,0,0,.35);
 }
 
-.case-image-wrapper img {
-   *width: 100%;
-    height* auto;
-    display: block;
-}
-
-.cas*-study-image {
+.case-image-wrapp***img {
     width: 100%;
-  * max-width: 1100px;
-    margin* 35px auto;
-    overflow:*hidden;
-    border-radius: 20px;
-}*
-*case-study-image img {
-    width: *00%;
-   *height* auto;
+    heigh***auto;
     display: block;
-    obj*ct-fit: contain;
 }
 
-.case-image:ho*er,
-.case-image-wrapper:hover,
-.ca*e-study-image:hover {
-    transfor*: translateY(-5px);
-}}
+.ca***study-image {
+    width: 100%;
+ ***max-width: 1100px;
+    margin: 3*** auto;
+    overflow: hidden;
+   ***rder-radius: 20px;
+}
+
+.case-stud***mage img {
+    width: 100%;
+    ***ght: auto;
+    display: block;
+ ***object-fit: contain;
+}
+
+.case-im***:hover,
+.case-image-wrapper:hove***.case-study-image:hover {
+    tr***form: translateY(-5px);
+}
 
 /* =====================================================
    CUSTOM SKILLS COLORS
