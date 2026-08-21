@@ -4312,12 +4312,15 @@ PORTFOLIO ***GE FIXES
 ===================================================== */
 
 .btn-contact {
-    border: 2px solid var(--powerautomate) !important;
+    border: 2px solid #f97316 !important;
+    color: #ffb37a !important;
 }
 
 .btn-contact:hover {
-    border-color: #72a7ff !important;
-    box-shadow: 0 0 20px rgba(0,102,255,.35);
+    border-color: #fb923c !important;
+    background: rgba(249,115,22,.12) !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 20px rgba(249,115,22,.35);
 }
 
 .btn-cv {
