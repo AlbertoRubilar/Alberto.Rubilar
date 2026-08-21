@@ -4131,11 +4131,49 @@ footer {
 }}
 
 /* =====================================================
-   ECOSYSTEM SECTION
+   CUSTOM SKILLS COLORS
 ===================================================== */
 
-.ecosystem-subtitle {
-    max-width: 1100px !important;
-    margin: 0 auto !important;
-    text-align: center !important;
+.skill-vba::before {
+    background: #1f6feb;
+}
+
+.skill-autohotkey::before {
+    background: #8e44ad;
+}
+
+.skill-process::before {
+    background: #27ae60;
+}
+
+.skill-quality::before {
+    background: #e67e22;
+}
+
+.skill-github::before {
+    background: #ffffff;
+}
+
+/* =====================================================
+   CUSTOM TECH COLORS
+===================================================== */
+
+.tech-vba {
+    color: #7cb6ff !important;
+    border-color: rgba(31,111,235,.35) !important;
+}
+
+.tech-autohotkey {
+    color: #d39cff !important;
+    border-color: rgba(142,68,173,.35) !important;
+}
+
+.tech-github {
+    color: #ffffff !important;
+    border-color: rgba(255,255,255,.30) !important;
+}
+
+.tech-quality {
+    color: #ffb366 !important;
+    border-color: rgba(230,126,34,.35) !important;
 }
