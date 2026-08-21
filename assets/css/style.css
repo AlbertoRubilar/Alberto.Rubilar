@@ -4225,3 +4225,42 @@ footer {
 .contact-link:hover {
     color: #ffffff;
 }
+/* =====================================================
+   CONTACT CARDS COLORS
+===================================================== */
+
+.contact-email::before {
+    background: #3b82f6 !important;
+}
+
+.contact-linkedin::before {
+    background: #0077b5 !important;
+}
+
+.contact-github::before {
+    background: #ffffff !important;
+}
+
+.contact-availability::before {
+    background: #22c55e !important;
+}
+
+/* =====================================================
+   INTEREST AREAS
+===================================================== */
+
+.area-data::before {
+    background: #06b6d4 !important;
+}
+
+.area-bi::before {
+    background: #f2c811 !important;
+}
+
+.area-developer::before {
+    background: #742774 !important;
+}
+
+.area-automation::before {
+    background: #0066ff !important;
+}
