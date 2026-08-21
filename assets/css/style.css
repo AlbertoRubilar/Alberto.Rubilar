@@ -4216,3 +4216,12 @@ footer {
 .area-automation {
     border-top: 4px solid #0066ff;
 }
+.contact-link {
+    color: #8fc5ff;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.contact-link:hover {
+    color: #ffffff;
+}
