@@ -4333,3 +4333,46 @@ PORTFOLIO ***GE FIXES
     color: #ffffff !important;
     box-shadow: 0 0 20px rgba(16,124,65,.30);
 }
+/* =====================================================
+   HOME FEATURED PROJECT COLORS
+===================================================== */
+
+.featured-project-card.project-card-instore::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--powerbi);
+}
+
+.featured-project-card.project-card-control::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--powerapps);
+}
+
+.featured-project-card.project-card-analytics::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--powerquery);
+}
+
+.featured-project-card.project-card-automation::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--powerautomate);
+}
