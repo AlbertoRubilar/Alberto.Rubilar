@@ -4307,3 +4307,24 @@ PORTFOLIO ***GE FIXES
     background: red !important;
     height: 12px !important;
 }
+/* =====================================================
+   HERO CUSTOM BUTTONS
+===================================================== */
+
+.btn-contact {
+    border: 2px solid var(--powerautomate) !important;
+}
+
+.btn-contact:hover {
+    border-color: #72a7ff !important;
+    box-shadow: 0 0 20px rgba(0,102,255,.35);
+}
+
+.btn-cv {
+    border: 2px solid var(--excel) !important;
+}
+
+.btn-cv:hover {
+    border-color: #55c88a !important;
+    box-shadow: 0 0 20px rgba(16,124,65,.30);
+}
