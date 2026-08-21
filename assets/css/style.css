@@ -4129,3 +4129,29 @@ footer {
 .ca*e-study-image:hover {
     transfor*: translateY(-5px);
 }}
+/* =====================================================
+   ECOSYSTEM SECTION
+===================================================== */
+
+.ecosystem-section {
+    text-align: center;
+}
+
+.ecosystem-section .section-header {
+    text-align: center;
+}
+
+.ecosystem-section .section-tag {
+    display: block;
+    text-align: center;
+}
+
+.ecosystem-section h2 {
+    text-align: center;
+}
+
+.ecosystem-section .section-subtitle {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
