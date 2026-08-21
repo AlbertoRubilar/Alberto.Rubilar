@@ -4298,3 +4298,9 @@ footer {
     height: 5px !important;
     opacity: 1 !important;
 }
+/* TEST GITHUB CARD */
+
+.contact-github::before {
+    background: red !important;
+    height: 12px !important;
+}
