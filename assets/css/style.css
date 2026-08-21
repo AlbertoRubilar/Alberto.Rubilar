@@ -4248,19 +4248,53 @@ footer {
 /* =====================================================
    INTEREST AREAS
 ===================================================== */
-
 .area-data::before {
     background: #06b6d4 !important;
+    height: 5px !important;
+    opacity: 1 !important;
 }
 
 .area-bi::before {
     background: #f2c811 !important;
+    height: 5px !important;
+    opacity: 1 !important;
 }
 
 .area-developer::before {
     background: #742774 !important;
+    height: 5px !important;
+    opacity: 1 !important;
 }
 
 .area-automation::before {
     background: #0066ff !important;
+    height: 5px !important;
+    opacity: 1 !important;
+}
+/* =====================================================
+   CONTACT CARDS COLORS
+===================================================== */
+
+.contact-email::before {
+    background: #3b82f6 !important;
+    height: 5px !important;
+    opacity: 1 !important;
+}
+
+.contact-linkedin::before {
+    background: #0077b5 !important;
+    height: 5px !important;
+    opacity: 1 !important;
+}
+
+.contact-github::before {
+    background: #ffffff !important;
+    height: 5px !important;
+    opacity: 1 !important;
+}
+
+.contact-availability::before {
+    background: #22c55e !important;
+    height: 5px !important;
+    opacity: 1 !important;
 }
