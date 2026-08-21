@@ -4177,3 +4177,42 @@ footer {
     color: #ffb366 !important;
     border-color: rgba(230,126,34,.35) !important;
 }
+/* =====================================================
+   CONTACT PAGE COLORS
+===================================================== */
+
+.contact-email {
+    border-top: 4px solid #3b82f6;
+}
+
+.contact-linkedin {
+    border-top: 4px solid #0077b5;
+}
+
+.contact-github {
+    border-top: 4px solid #ffffff;
+}
+
+.contact-availability {
+    border-top: 4px solid #22c55e;
+}
+
+/* =====================================================
+   INTEREST AREAS
+===================================================== */
+
+.area-data {
+    border-top: 4px solid #06b6d4;
+}
+
+.area-bi {
+    border-top: 4px solid #f2c811;
+}
+
+.area-developer {
+    border-top: 4px solid #7c3aed;
+}
+
+.area-automation {
+    border-top: 4px solid #0066ff;
+}
