@@ -4313,7 +4313,7 @@ PORTFOLIO ***GE FIXES
 
 .btn-contact {
     border: 2px solid #f97316 !important;
-    color: #ffb37a !important;
+    color: #ffffff !important;
 }
 
 .btn-contact:hover {
@@ -4325,9 +4325,11 @@ PORTFOLIO ***GE FIXES
 
 .btn-cv {
     border: 2px solid var(--excel) !important;
+    color: #ffffff !important;
 }
 
 .btn-cv:hover {
     border-color: #55c88a !important;
+    color: #ffffff !important;
     box-shadow: 0 0 20px rgba(16,124,65,.30);
 }
