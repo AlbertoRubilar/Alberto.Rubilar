@@ -4376,3 +4376,26 @@ PORTFOLIO ***GE FIXES
     height: 4px;
     background: var(--powerautomate);
 }
+/* =====================================================
+   INSTORE OVERVIEW COLORS
+===================================================== */
+
+.overview-data::before {
+    background: #06b6d4 !important;
+}
+
+.overview-tables::before {
+    background: #55c88a !important;
+}
+
+.overview-flow::before {
+    background: var(--powerautomate) !important;
+}
+
+.overview-bi::before {
+    background: var(--powerbi) !important;
+}
+
+.overview-app::before {
+    background: var(--powerapps) !important;
+}
