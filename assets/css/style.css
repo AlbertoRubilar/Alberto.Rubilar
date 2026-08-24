@@ -4377,26 +4377,25 @@ PORTFOLIO ***GE FIXES
     background: var(--powerautomate);
 }
 /* =====================================================
-   INSTORE OVERVIEW NUMBERS
+   INSTORE OVERVIEW CARDS
 ===================================================== */
 
-.overview-data-number {
-    color: #06b6d4 !important;
+.overview-data {
+    border-top: 4px solid #06b6d4 !important;
 }
 
-.overview-tables-number {
-    color: #21a366 !important;
+.overview-tables {
+    border-top: 4px solid #21a366 !important;
 }
 
-.overview-flow-number {
-    color: #0066ff !important;
+.overview-flow {
+    border-top: 4px solid #0066ff !important;
 }
 
-.overview-bi-number {
-    color: #f2c811 !important;
+.overview-bi {
+    border-top: 4px solid #f2c811 !important;
 }
 
-.overview-app-number {
-    color: #742774 !important;
+.overview-app {
+    border-top: 4px solid #742774 !important;
 }
-``
