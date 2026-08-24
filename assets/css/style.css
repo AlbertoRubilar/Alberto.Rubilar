@@ -4377,25 +4377,26 @@ PORTFOLIO ***GE FIXES
     background: var(--powerautomate);
 }
 /* =====================================================
-   INSTORE OVERVIEW COLORS
+   INSTORE OVERVIEW NUMBERS
 ===================================================== */
 
-.overview-data::before {
-    background: #06b6d4 !important;
+.overview-data-number {
+    color: #06b6d4 !important;
 }
 
-.overview-tables::before {
-    background: #55c88a !important;
+.overview-tables-number {
+    color: #21a366 !important;
 }
 
-.overview-flow::before {
-    background: var(--powerautomate) !important;
+.overview-flow-number {
+    color: #0066ff !important;
 }
 
-.overview-bi::before {
-    background: var(--powerbi) !important;
+.overview-bi-number {
+    color: #f2c811 !important;
 }
 
-.overview-app::before {
-    background: var(--powerapps) !important;
+.overview-app-number {
+    color: #742774 !important;
 }
+``
